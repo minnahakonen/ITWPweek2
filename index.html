@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User database</title>
+    <meta charset="UTF-8" />
+	</head>
+  <body>
+    <h1 id="header">User database</h1>
+		<br />
+		<table id = "datatable" name = "datatable">
+			<thead id = "table-header" name= "table-header">
+				<tr>
+					<th>Username</th>
+					<th>Email</th>
+					<th>Address</th>
+					<th>Admin</th>
+				</tr>	
+			</thead>
+			<tbody id = "table-body" name = "table-body">
+					<td>Admin-na</td>
+					<td>theadminna@email.com</td>
+					<td>Address 123</td>
+					<td>X</td>
+				</tr>
+				<tr>	
+					<td>User1</td>
+					<td>justauser@email.com</td>
+					<td>Street 6</td>
+					<td>-</td>
+				</tr>
+				<tr>	
+					<td>User2</td>
+					<td>us2er@email.com</td>
+					<td>House 22</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+			</table>
+			<br>
+			<h4>Add new user to the table:</h4>
+			<label>Username</label>
+			<br>
+			<textarea id = "input-username" name = "input-username"></textarea>
+			<br>
+			<label>Email</label>
+			<br>
+			<textarea id = "input-email" name = "input-email"></textarea>
+			<br>
+			<label>Address</label>
+			<br>
+			<textarea id = "input-address" name = "input-address"></textarea>
+			<br>
+			<br>
+			<label>Admin</label>
+			<input type = checkbox  id = "input-admin" name = "admin">
+			<br>
+			<br>
+			<label>Upload an image:</label>
+			<input type="file" id="input-image" name = "input-image">
+		<br>
+		<br>
+		<button id = "submit-data" name = "submit-data">Submit</button>
+		<button id = "empty-table" name = "empty-table">Empty table</button>
+
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
