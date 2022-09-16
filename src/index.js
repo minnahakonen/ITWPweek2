@@ -14,19 +14,7 @@ submitButton.addEventListener("click", function () {
 
   const row = document.createElement("tr");
 
-  Un.innerHTML = document.getElementById("input-username").value;
-  /*const testun = Un.textContent;
-  console.log(testun);
-  for (let i = 0; i < listofusers.length; i++) {
-    console.log(i);
-    if (listofusers[i] === testun) {
-      console.log("value is same: " + listofusers[i]);
-    } else {
-      console.log("value is not the same");
-      listofusers.push(Un.textContent);
-    }*/
 
-  //console.log(listofusers);
   Em.innerHTML = document.getElementById("input-email").value;
   Adr.innerHTML = document.getElementById("input-address").value;
 
@@ -40,10 +28,15 @@ submitButton.addEventListener("click", function () {
   //imageButton.addEventListener("click", () => {});
   const file = document.getElementById("input-image").files[0];
   const newimage = document.createElement("img");
+  if (!file) {
+    newimage.src = ""
+  }
+  else {
   newimage.src = URL.createObjectURL(file);
   newimage.height = 64;
   newimage.width = 64;
-
+  }
+  
   Pic.appendChild(newimage);
 
   //Pic.innerHTML = document.getElementById("input-image").value;
